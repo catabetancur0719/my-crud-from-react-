@@ -1,0 +1,64 @@
+body {
+  background-color: #f0f2f5;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+form {
+  background-color: white;
+  padding: 25px;
+  width: 400px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  gap: 12px; /* 👈 un espacio más uniforme entre todos los campos */
+}
+
+div {
+  display: flex;
+  flex-direction: column;
+  margin: 0; /* 👈 eliminamos márgenes extra */
+  padding: 0; /* 👈 eliminamos relleno extra */
+}
+
+label {
+  font-weight: 500;
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 2px; /* 👈 label más pegado al input */
+}
+
+input {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0; /* 👈 sin espacio extra arriba */
+}
+
+textarea {
+  padding: 12px; /* 👈 igual padding que los inputs */
+  font-size: 15px;
+  min-height: 100px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin: 0;
+}
+
+button {
+  padding: 12px;
+  font-size: 16px;
+  background-color: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ab7;
+}
