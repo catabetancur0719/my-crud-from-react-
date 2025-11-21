@@ -1,0 +1,111 @@
+/* ---- RESETEO ---- */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+}
+
+/* ---- CONTENEDOR PRINCIPAL ---- */
+.records-page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* ---- BARRA AZUL SUPERIOR ---- */
+.navbar {
+  background-color: #3f3dbd;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+}
+
+/* Ícono del menú (3 líneas) */
+.menu-icon {
+  cursor: pointer;
+}
+.menu-icon .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 4px 0;
+  border-radius: 2px;
+}
+
+/* ---- CONTENIDO PRINCIPAL ---- */
+.content {
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* Botón AGREGAR */
+.add-btn {
+  background-color: #3f3dbd;
+  color: white;
+  border: none;
+  padding: 8px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 14px;
+  transition: background-color 0.3s;
+  margin-bottom: 25px;
+  margin-right: 10px;
+}
+
+.add-btn:hover {
+  background-color: #302ca0;
+}
+
+/* ---- CAJA PRINCIPAL (gris claro) ---- */
+.records-box {
+  width: 100%;
+  background-color: #f0f0f0;
+  border-radius: 15px;
+  padding: 25px;
+  max-width: 900px;
+}
+
+/* ---- CADA FILA (gris oscuro) ---- */
+.record-row {
+  background-color: #d3d3d3;
+  height: 35px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* Texto de los datos */
+.record-info {
+  color: #333;
+  font-size: 14px;
+}
+
+/* Contenedor de iconos */
+.record-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Íconos */
+.edit-icon,
+.delete-icon {
+  cursor: pointer;
+  font-size: 16px;
+  color: #222;
+  transition: color 0.2s;
+}
+
+.edit-icon:hover {
+  color: #ffb300;
+}
+
+.delete-icon:hover {
+  color: #e53935;
+}
